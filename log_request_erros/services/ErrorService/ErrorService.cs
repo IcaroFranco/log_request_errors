@@ -19,7 +19,7 @@ public static class ErrorService
 
         problemDetails.Extensions.Add("traceId", context.HttpContext.TraceIdentifier);
 
-        LogService.LogService.Log(problemDetails);
+        //LogService.LogService.Log(problemDetails);
 
         return new BadRequestObjectResult(problemDetails)
         {
